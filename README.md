@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=mazen-fahim&label=Profile%20views&style=for-the-badge" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=HosamAyoub&label=Profile%20views&style=for-the-badge" alt="Profile views" />
 </p>
 
 # Hi, I'm Hosam Ayoub 👋
@@ -39,12 +39,12 @@ frontend:
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mazen-fahim&show_icons=true&include_all_commits=true" height="165" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mazen-fahim" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=HosamAyoub&show_icons=true&include_all_commits=true" height="165" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HosamAyoub" height="165" />
 </p>
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mazen-fahim&layout=compact" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HosamAyoub&layout=compact" height="165" />
 </p>
 
 ---
