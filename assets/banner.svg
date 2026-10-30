@@ -9,7 +9,7 @@
       <stop offset="0" stop-color="#ffffff"/>
       <stop offset="1" stop-color="#9cc3ff"/>
     </linearGradient>
-    <linearGradient id="time" gradientUnits="userSpaceOnUse" x1="110" y1="0" x2="965" y2="0">
+    <linearGradient id="time" gradientUnits="userSpaceOnUse" x1="110" y1="0" x2="1090" y2="0">
       <stop offset="0" stop-color="#7ee787"/>
       <stop offset="1" stop-color="#3b82f6"/>
     </linearGradient>
@@ -25,7 +25,7 @@
     .icon { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
     .pulse { fill: none; stroke: #ffffff; stroke-width: 4; stroke-linecap: round; opacity: .85;
              stroke-dasharray: 40 960; stroke-dashoffset: 1000; animation: travel 5s linear infinite; }
-    .edge { fill: none; stroke: #2f5a94; stroke-width: 1.5; }
+    .edge { fill: none; stroke: #3a6db0; stroke-width: 1; }
     .neuron { fill: #3b82f6; animation: blink 3s ease-in-out infinite; }
     .neuron.d1 { animation-delay: .4s; } .neuron.d2 { animation-delay: .8s; }
     .neuron.d3 { animation-delay: 1.2s; } .neuron.d4 { animation-delay: 1.6s; }
@@ -41,8 +41,8 @@
   <text x="600" y="114" text-anchor="middle" class="sans" font-size="21" fill="#c9d7ea">Software engineer who loves building solutions</text>
 
   <!-- the time line -->
-  <line x1="110" y1="200" x2="965" y2="200" stroke="url(#time)" stroke-width="3" opacity=".55"/>
-  <path class="pulse" pathLength="1000" d="M110 200 H965"/>
+  <line x1="110" y1="200" x2="1090" y2="200" stroke="url(#time)" stroke-width="3" opacity=".55"/>
+  <path class="pulse" pathLength="1000" d="M110 200 H1010"/>
 
   <!-- 2021: a chip -->
   <g>
@@ -82,15 +82,15 @@
   <!-- today: LLMs in production -->
   <g>
     <text x="1010" y="160" text-anchor="middle" class="mono year" fill="#3b82f6">TODAY</text>
-    <!-- the neural net from the first banner; the time line feeds its inputs -->
+    <circle class="node" cx="1010" cy="200" r="26" stroke="#3b82f6"/>
+    <!-- the neural net from the first banner, sized to sit inside the circle -->
     <g class="edge">
-      <path d="M965 200L978.5 186M965 200L978.5 214"/>
-      <path d="M978.5 186L1010 172M978.5 186L1010 200M978.5 186L1010 228M978.5 214L1010 172M978.5 214L1010 200M978.5 214L1010 228"/>
-      <path d="M1010 172L1041.5 186M1010 200L1041.5 186M1010 228L1041.5 186M1010 172L1041.5 214M1010 200L1041.5 214M1010 228L1041.5 214"/>
+      <path d="M996 193L1010 187M996 193L1010 200M996 193L1010 213M996 207L1010 187M996 207L1010 200M996 207L1010 213"/>
+      <path d="M1010 187L1024 193M1010 200L1024 193M1010 213L1024 193M1010 187L1024 207M1010 200L1024 207M1010 213L1024 207"/>
     </g>
-    <circle class="neuron" cx="978.5" cy="186" r="5"/><circle class="neuron d1" cx="978.5" cy="214" r="5"/>
-    <circle class="neuron d2" cx="1010" cy="172" r="5"/><circle class="neuron d3" cx="1010" cy="200" r="5"/><circle class="neuron d4" cx="1010" cy="228" r="5"/>
-    <circle class="neuron d1" cx="1041.5" cy="186" r="5"/><circle class="neuron d3" cx="1041.5" cy="214" r="5"/>
+    <circle class="neuron" cx="996" cy="193" r="2.8"/><circle class="neuron d1" cx="996" cy="207" r="2.8"/>
+    <circle class="neuron d2" cx="1010" cy="187" r="2.8"/><circle class="neuron d3" cx="1010" cy="200" r="2.8"/><circle class="neuron d4" cx="1010" cy="213" r="2.8"/>
+    <circle class="neuron d1" cx="1024" cy="193" r="2.8"/><circle class="neuron d3" cx="1024" cy="207" r="2.8"/>
     <text x="1010" y="252" text-anchor="middle" class="sans title">LLMs in production</text>
     <text x="1010" y="274" text-anchor="middle" class="sans sub">Software Engineer @ Z2Data</text>
   </g>
