@@ -29,9 +29,11 @@
     .neuron { fill: #3b82f6; animation: blink 3s ease-in-out infinite; }
     .neuron.d1 { animation-delay: .4s; } .neuron.d2 { animation-delay: .8s; }
     .neuron.d3 { animation-delay: 1.2s; } .neuron.d4 { animation-delay: 1.6s; }
+    .ring { fill: none; stroke: #3b82f6; stroke-width: 2; transform-origin: 1010px 200px; animation: ring 2.5s ease-out infinite; }
+    @keyframes ring { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.7); opacity: 0; } }
     @keyframes travel { to { stroke-dashoffset: 0; } }
     @keyframes blink { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .pulse, .neuron { animation: none; } .pulse { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .pulse, .neuron, .ring { animation: none; } .ring { opacity: 0; } .pulse { opacity: 0; } }
   </style>
 
   <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
@@ -82,6 +84,7 @@
   <!-- today: LLMs in production -->
   <g>
     <text x="1010" y="160" text-anchor="middle" class="mono year" fill="#3b82f6">TODAY</text>
+    <circle class="ring" cx="1010" cy="200" r="26"/>
     <circle class="node" cx="1010" cy="200" r="26" stroke="#3b82f6"/>
     <!-- the neural net from the first banner, sized to sit inside the circle -->
     <g class="edge">
