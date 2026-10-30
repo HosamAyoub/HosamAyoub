@@ -14,7 +14,7 @@ const stops = [
   { x: 170, c: '#7ee787', a: k(0.2), b: k(1), year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
   { x: 450, c: '#5fd0a8', a: k(2.2), b: k(3), year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
   { x: 730, c: '#4fa3f0', a: k(4.2), b: k(5), year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
-  { x: 1010, c: '#3b82f6', a: k(6.2), b: k(7), year: 'TODAY', title: 'LLMs in production', sub: 'Software Engineer @ Z2Data' },
+  { x: 1010, c: '#3b82f6', a: k(6.2), b: k(7), year: 'TODAY', title: 'AI pipeline in production', sub: 'Software Engineer @ Z2Data' },
 ];
 
 // icon drawings; `col` is the stroke/fill colour, `live` adds the neuron blink
@@ -92,7 +92,7 @@ const stopSvg = stops.map((s, i) => `
     <text x="${s.x}" y="274" text-anchor="middle" class="sans sub">${s.sub}</text>
   </g>`).join('\n');
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hosam Ayoub, software engineer who loves building solutions. 2021 embedded C and microcontroller drivers, 2023 embedded Linux with SOVA, 2025 full-stack .NET, today LLMs in production.">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hosam Ayoub, software engineer who loves building solutions. 2021 embedded C and microcontroller drivers, 2023 embedded Linux with SOVA, 2025 full-stack .NET, today an AI pipeline in production at Z2Data.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d1117"/>

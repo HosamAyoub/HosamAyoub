@@ -18,7 +18,7 @@
 
 I love building solutions, and I started at the metal: as an Electronics & Communications Engineering student I built an 8-bit single-cycle **MIPS processor**, wrote **ATmega32 / STM32 drivers**, and developed an **STM32 dual-bank bootloader with rollback** for over-the-air firmware updates.
 
-Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I build web systems in **C# / .NET, SQL Server and Angular**, and today I'm a **Software Engineer at Z2Data**, where I co-built and deployed an **LLM-based automation pipeline** that multiplied daily event intake and cut operating costs by **15x** through optimization.
+Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I build web systems in **C# / .NET, SQL Server and Angular**. Today I'm a **Software Engineer at Z2Data**: I spent my first months maintaining and extending their product (.NET, SQL Server, Angular, Elasticsearch), then co-built, with the technical head, an **AI pipeline** that uses an LLM and ML models on C# / .NET and SQL to catch supply-chain events and news. It multiplied daily event intake, filters out most of the noise and ranks what's left, so the data team reviews only what matters. Through optimization we cut its operating cost by **15x**, and I solved a performance bottleneck in one of its ML models.
 
 The hardware years still shape how I work: I debug across every layer, from device constraints up to business logic, and I care about performance and cost.
 

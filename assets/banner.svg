@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hosam Ayoub, software engineer who loves building solutions. 2021 embedded C and microcontroller drivers, 2023 embedded Linux with SOVA, 2025 full-stack .NET, today LLMs in production.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hosam Ayoub, software engineer who loves building solutions. 2021 embedded C and microcontroller drivers, 2023 embedded Linux with SOVA, 2025 full-stack .NET, today an AI pipeline in production at Z2Data.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d1117"/>
@@ -135,7 +135,7 @@
     <text x="730" y="274" text-anchor="middle" class="sans sub">C#, SQL Server, Angular</text>
   </g>
 
-  <!-- TODAY: LLMs in production -->
+  <!-- TODAY: AI pipeline in production -->
   <g>
     <text x="1010" y="160" text-anchor="middle" class="mono year" fill="#3b82f6">TODAY</text>
     <circle cx="1010" cy="200" r="26" fill="none" stroke="#3b82f6" stroke-width="2.5" opacity="0">
@@ -161,7 +161,7 @@
     <circle cx="1010" cy="187" r="2.8" fill="#0d1117"/><circle cx="1010" cy="200" r="2.8" fill="#0d1117"/><circle cx="1010" cy="213" r="2.8" fill="#0d1117"/>
     <circle cx="1024" cy="193" r="2.8" fill="#0d1117"/><circle cx="1024" cy="207" r="2.8" fill="#0d1117"/>
     </g>
-    <text x="1010" y="252" text-anchor="middle" class="sans title">LLMs in production</text>
+    <text x="1010" y="252" text-anchor="middle" class="sans title">AI pipeline in production</text>
     <text x="1010" y="274" text-anchor="middle" class="sans sub">Software Engineer @ Z2Data</text>
   </g>
 </svg>
