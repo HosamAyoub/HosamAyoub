@@ -2,7 +2,7 @@
 const fs = require('fs');
 // Timing in seconds. Stops finish at 1, 3, 5 and 7 s (on the 1 s pulse beat); after the last one
 // all four pulse together FINAL times in total, then everything resets.
-const SEC = 10, FINAL = 3, BEAT = 1, PULSE = 0.65;
+const SEC = 9, FINAL = 2, BEAT = 1, PULSE = 0.65;
 const DUR = SEC + 's';
 const k = (t) => +(t / SEC).toFixed(4);
 const DARK = '#0d1117';
