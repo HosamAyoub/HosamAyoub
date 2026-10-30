@@ -18,7 +18,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&theme=github_dark&bg_color=0d1117&title_color=58a6ff&icon_color=3b82f6
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&theme=github_dark&bg_color=0d1117&title_color=58a6ff&icon_color=3b82f6
           path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -26,25 +26,10 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&title_color=0969da&icon_color=0969da
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&title_color=0969da&icon_color=0969da
           path: profile/stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Top languages card (dark)
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide=makefile,cmake&hide_border=true&theme=github_dark&bg_color=0d1117&title_color=58a6ff
-          path: profile/top-langs-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Top languages card (light)
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide=makefile,cmake&hide_border=true&title_color=0969da
-          path: profile/top-langs-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
         run: |
