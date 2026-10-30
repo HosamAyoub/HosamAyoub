@@ -49,13 +49,13 @@ const tileSvg = tiles.map((t, i) => {
   const x = X0 + i * (W + GAP);
   return `
   <g transform="translate(${x} ${Y0})">
-    <rect width="${W}" height="112" rx="12" fill="#111c2e" stroke="#23406b" stroke-width="1.5"/>
+    <rect width="${W}" height="124" rx="12" fill="#111c2e" stroke="#23406b" stroke-width="1.5"/>
     <text x="24" y="56" class="sans num">${t.value}</text>
-    ${t.lines.map((l, j) => `<text x="24" y="${82 + j * 18}" class="sans label">${l}</text>`).join('\n    ')}
+    ${t.lines.map((l, j) => `<text x="24" y="${86 + j * 22}" class="sans label">${l}</text>`).join('\n    ')}
   </g>`;
 }).join('');
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="214" viewBox="0 0 1200 214" role="img" aria-label="By the numbers: ${tiles.map((t) => `${t.value} ${t.lines.join(' ')}`).join('; ')}">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="226" viewBox="0 0 1200 226" role="img" aria-label="By the numbers: ${tiles.map((t) => `${t.value} ${t.lines.join(' ')}`).join('; ')}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d1117"/><stop offset="0.55" stop-color="#0f1b30"/><stop offset="1" stop-color="#132a4a"/>
@@ -67,12 +67,12 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="214" v
   <style>
     .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
     .mono { font-family: 'Cascadia Code', 'Fira Code', Consolas, 'SFMono-Regular', Menlo, monospace; }
-    .num { font-size: 42px; font-weight: 700; fill: url(#num); }
-    .label { font-size: 15px; fill: #9fb3cc; }
+    .num { font-size: 46px; font-weight: 700; fill: url(#num); }
+    .label { font-size: 18px; fill: #9fb3cc; }
   </style>
-  <rect width="1200" height="214" rx="18" fill="url(#bg)"/>
-  <text x="36" y="46" class="mono" font-size="14" letter-spacing="3" fill="#7ee787">BY THE NUMBERS</text>
-  <text x="1164" y="46" text-anchor="end" class="mono" font-size="12" fill="#5b7aa6">GitHub figures refresh daily</text>${tileSvg}
+  <rect width="1200" height="226" rx="18" fill="url(#bg)"/>
+  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#7ee787">BY THE NUMBERS</text>
+  <text x="1164" y="46" text-anchor="end" class="mono" font-size="14" fill="#5b7aa6">GitHub figures refresh daily</text>${tileSvg}
 </svg>
 `;
 
