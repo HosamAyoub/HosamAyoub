@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+LLM+automation+in+production;From+embedded+C+to+agentic+workflows" alt="Full-Stack Software Engineer. Shipping LLM automation in production. From embedded C to agentic workflows.">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+AI+pipelines+in+production;From+embedded+C+to+agentic+workflows" alt="Full-Stack Software Engineer. Shipping AI pipelines in production. From embedded C to agentic workflows.">
 </p>
 
 <p align="center">
