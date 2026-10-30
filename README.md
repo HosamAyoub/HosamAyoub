@@ -22,11 +22,11 @@ Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I bu
 
 The hardware years still shape how I work: I debug across every layer, from device constraints up to business logic, and I care about performance and cost.
 
-- **Now:** Software Engineer @ Z2Data (Dec 2025 - present) · before that, INFOSAS (multi-tenant legacy ERP)
-- **Education:** B.Sc. Electronics & Electrical Communications Engineering, Fayoum University, Very Good with Honors
-- **Graduation project:** SOVA smart glasses, graded Excellent and ranked 1st in the department
-- **Workflow:** agent-first development, with Claude Code as my daily driver
-- **Languages:** Arabic (native) · English (professional)
+- **Before Z2Data:** kept a big multi-tenant ERP running at INFOSAS, fixing bugs without breaking things for other clients
+- **Studied:** Electronics & Communications Engineering at Fayoum University, graduated with honors
+- **Grad project:** SOVA, smart glasses that read text out loud and recognize faces, objects and colors for blind users. It ranked 1st in my department
+- **How I code:** agent-first, with Claude Code open all day
+- **I speak:** Arabic and English
 
 ## Tech stack
 
