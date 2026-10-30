@@ -69,8 +69,8 @@
   <g>
     <text x="170" y="160" text-anchor="middle" class="mono year" fill="#7ee787">2021</text>
     <circle cx="170" cy="200" r="26" fill="none" stroke="#7ee787" stroke-width="2.5" opacity="0">
-      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46;46" keyTimes="0;0.13;0.2;1"/>
-      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0;0" keyTimes="0;0.13;0.132;0.2;1"/>
+      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46;26;46;26;46;26;46;26;46;26;46;46" keyTimes="0;0.13;0.23;0.28;0.38;0.43;0.53;0.58;0.68;0.73;0.83;0.88;0.98;1"/>
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0" keyTimes="0;0.13;0.132;0.23;0.28;0.282;0.38;0.43;0.432;0.53;0.58;0.582;0.68;0.73;0.732;0.83;0.88;0.882;0.98;1"/>
     </circle>
     <circle class="node" cx="170" cy="200" r="26" stroke="#7ee787"/>
     <g class="icon" stroke="#7ee787">
@@ -93,8 +93,8 @@
   <g>
     <text x="450" y="160" text-anchor="middle" class="mono year" fill="#5fd0a8">2023</text>
     <circle cx="450" cy="200" r="26" fill="none" stroke="#5fd0a8" stroke-width="2.5" opacity="0">
-      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46;46" keyTimes="0;0.38;0.45;1"/>
-      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0;0" keyTimes="0;0.38;0.382;0.45;1"/>
+      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46;26;46;26;46;26;46;46" keyTimes="0;0.38;0.48;0.53;0.63;0.68;0.78;0.83;0.93;1"/>
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0" keyTimes="0;0.38;0.382;0.48;0.53;0.532;0.63;0.68;0.682;0.78;0.83;0.832;0.93;1"/>
     </circle>
     <circle class="node" cx="450" cy="200" r="26" stroke="#5fd0a8"/>
     <g class="icon" stroke="#5fd0a8">
@@ -117,8 +117,8 @@
   <g>
     <text x="730" y="160" text-anchor="middle" class="mono year" fill="#4fa3f0">2025</text>
     <circle cx="730" cy="200" r="26" fill="none" stroke="#4fa3f0" stroke-width="2.5" opacity="0">
-      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46;46" keyTimes="0;0.63;0.7;1"/>
-      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0;0" keyTimes="0;0.63;0.632;0.7;1"/>
+      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46;26;46;46" keyTimes="0;0.63;0.73;0.78;0.88;1"/>
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0;0;0.9;0;0" keyTimes="0;0.63;0.632;0.73;0.78;0.782;0.88;1"/>
     </circle>
     <circle class="node" cx="730" cy="200" r="26" stroke="#4fa3f0"/>
     <g class="icon" stroke="#4fa3f0">
@@ -139,8 +139,8 @@
   <g>
     <text x="1010" y="160" text-anchor="middle" class="mono year" fill="#3b82f6">TODAY</text>
     <circle cx="1010" cy="200" r="26" fill="none" stroke="#3b82f6" stroke-width="2.5" opacity="0">
-      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46;46" keyTimes="0;0.9;0.97;1"/>
-      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0;0" keyTimes="0;0.9;0.902;0.97;1"/>
+      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="26;26;46" keyTimes="0;0.9;1"/>
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;0.9;0" keyTimes="0;0.9;0.902;1"/>
     </circle>
     <circle class="node" cx="1010" cy="200" r="26" stroke="#3b82f6"/>
     <g fill="none" stroke="#3a6db0" stroke-width="1">
