@@ -135,7 +135,7 @@
     <text x="730" y="274" text-anchor="middle" class="sans sub">C#, SQL Server, Angular</text>
   </g>
 
-  <!-- TODAY: AI pipeline in production -->
+  <!-- TODAY: Production AI pipeline -->
   <g>
     <text x="1010" y="160" text-anchor="middle" class="mono year" fill="#3b82f6">TODAY</text>
     <circle cx="1010" cy="200" r="26" fill="none" stroke="#3b82f6" stroke-width="2.5" opacity="0">
@@ -161,7 +161,7 @@
     <circle cx="1010" cy="187" r="2.8" fill="#0d1117"/><circle cx="1010" cy="200" r="2.8" fill="#0d1117"/><circle cx="1010" cy="213" r="2.8" fill="#0d1117"/>
     <circle cx="1024" cy="193" r="2.8" fill="#0d1117"/><circle cx="1024" cy="207" r="2.8" fill="#0d1117"/>
     </g>
-    <text x="1010" y="252" text-anchor="middle" class="sans title">AI pipeline in production</text>
+    <text x="1010" y="252" text-anchor="middle" class="sans title">Production AI pipeline</text>
     <text x="1010" y="274" text-anchor="middle" class="sans sub">Software Engineer @ Z2Data</text>
   </g>
 </svg>
