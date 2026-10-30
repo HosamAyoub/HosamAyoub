@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Hosam Ayoub&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 5, Total Commits  : 1340, Total PRs: 12, Total Issues: 0, Contributed to (last year): 0</desc>
+        <desc id="descId">Total Stars Earned: 5, Total Commits  : 1344, Total PRs: 12, Total Issues: 0, Contributed to (last year): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 194.14353937664865;
+        stroke-dashoffset: 194.09772603753112;
       }
     }
   
