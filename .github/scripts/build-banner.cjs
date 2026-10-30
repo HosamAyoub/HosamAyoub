@@ -1,6 +1,6 @@
 // Generates assets/banner.svg (timeline banner, SMIL-timed loader). Run from the repo root: node .github/scripts/build-banner.cjs
 const fs = require('fs');
-const DUR = '8s';
+const DUR = '6s';
 const DARK = '#0d1117';
 const FILL = process.env.FILL || 'solid';
 const OUT = process.env.OUT || 'assets/banner.svg';
