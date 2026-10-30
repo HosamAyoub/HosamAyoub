@@ -11,10 +11,10 @@ const OUT = process.env.OUT || 'assets/banner.svg';
 
 // hold windows (fraction of the cycle) while the loader sits inside each stop
 const stops = [
-  { x: 170, c: '#7ee787', a: k(0.2), b: k(1), year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
-  { x: 450, c: '#5fd0a8', a: k(2.2), b: k(3), year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
-  { x: 730, c: '#4fa3f0', a: k(4.2), b: k(5), year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
-  { x: 1010, c: '#3b82f6', a: k(6.2), b: k(7), year: 'TODAY', title: 'Production AI pipeline', sub: 'Software Engineer @ Z2Data' },
+  { x: 170, c: '#7ee787', a: k(0.5), b: k(1), year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
+  { x: 450, c: '#5fd0a8', a: k(2.5), b: k(3), year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
+  { x: 730, c: '#4fa3f0', a: k(4.5), b: k(5), year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
+  { x: 1010, c: '#3b82f6', a: k(6.5), b: k(7), year: 'TODAY', title: 'Production AI pipeline', sub: 'Software Engineer @ Z2Data' },
 ];
 
 // icon drawings; `col` is the stroke/fill colour, `live` adds the neuron blink

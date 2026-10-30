@@ -15,22 +15,22 @@
     </linearGradient>
     <clipPath id="fill0">
       <rect x="144" y="174" width="0" height="52">
-        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.0222;0.1111;1"/>
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.0556;0.1111;1"/>
       </rect>
     </clipPath>
     <clipPath id="fill1">
       <rect x="424" y="174" width="0" height="52">
-        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.2444;0.3333;1"/>
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.2778;0.3333;1"/>
       </rect>
     </clipPath>
     <clipPath id="fill2">
       <rect x="704" y="174" width="0" height="52">
-        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.4667;0.5556;1"/>
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.5;0.5556;1"/>
       </rect>
     </clipPath>
     <clipPath id="fill3">
       <rect x="984" y="174" width="0" height="52">
-        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.6889;0.7778;1"/>
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.7222;0.7778;1"/>
       </rect>
     </clipPath>
   </defs>
@@ -60,7 +60,7 @@
   <line x1="110" y1="200" x2="1090" y2="200" stroke="url(#time)" stroke-width="3" opacity=".55"/>
   <g>
     <animateTransform attributeName="transform" type="translate" dur="9s" repeatCount="indefinite"
-      values="110 0;170 0;170 0;450 0;450 0;730 0;730 0;1010 0;1010 0;1010 0" keyTimes="0;0.0222;0.1111;0.2444;0.3333;0.4667;0.5556;0.6889;0.7778;1"/>
+      values="110 0;170 0;170 0;450 0;450 0;730 0;730 0;1010 0;1010 0;1010 0" keyTimes="0;0.0556;0.1111;0.2778;0.3333;0.5;0.5556;0.7222;0.7778;1"/>
     <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.0167;0.7778;0.8111;1"/>
     <rect x="-22" y="198" width="44" height="4" rx="2" fill="#ffffff" opacity=".9"/>
   </g>
