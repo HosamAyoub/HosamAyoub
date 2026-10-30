@@ -75,8 +75,8 @@
     </g>
     <g clip-path="url(#fill0)">
       <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.96;1"/>
-      <circle cx="170" cy="200" r="24.7" fill="#ffffff"/>
-      <g class="icon" stroke="#0d1117">
+      <circle cx="170" cy="200" r="24.7" fill="#ffffff" opacity=".9"/>
+      <g class="icon" stroke="#7ee787">
       <rect x="160" y="190" width="20" height="20" rx="3"/>
       <path d="M165 186v4M170 186v4M175 186v4M165 210v4M170 210v4M175 210v4M156 195h4M156 205h4M180 195h4M180 205h4"/>
     </g>
@@ -95,8 +95,8 @@
     </g>
     <g clip-path="url(#fill1)">
       <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.96;1"/>
-      <circle cx="450" cy="200" r="24.7" fill="#ffffff"/>
-      <g class="icon" stroke="#0d1117">
+      <circle cx="450" cy="200" r="24.7" fill="#ffffff" opacity=".9"/>
+      <g class="icon" stroke="#5fd0a8">
       <circle cx="441" cy="203" r="6"/><circle cx="459" cy="203" r="6"/>
       <path d="M447 203h6M435 203l-3-6M465 203l3-6"/>
     </g>
@@ -114,8 +114,8 @@
     </g>
     <g clip-path="url(#fill2)">
       <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.96;1"/>
-      <circle cx="730" cy="200" r="24.7" fill="#ffffff"/>
-      <g class="icon" stroke="#0d1117">
+      <circle cx="730" cy="200" r="24.7" fill="#ffffff" opacity=".9"/>
+      <g class="icon" stroke="#4fa3f0">
       <path d="M721 193l-7 7 7 7M739 193l7 7-7 7M733 190l-6 20"/>
     </g>
     </g>
@@ -136,14 +136,14 @@
     <circle class="neuron d1" cx="1024" cy="193" r="2.8" fill="#3b82f6"/><circle class="neuron d3" cx="1024" cy="207" r="2.8" fill="#3b82f6"/>
     <g clip-path="url(#fill3)">
       <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.96;1"/>
-      <circle cx="1010" cy="200" r="24.7" fill="#ffffff"/>
-      <g fill="none" stroke="#0d1117" stroke-width="1">
+      <circle cx="1010" cy="200" r="24.7" fill="#ffffff" opacity=".9"/>
+      <g fill="none" stroke="#3b82f6" stroke-width="1">
       <path d="M996 193L1010 187M996 193L1010 200M996 193L1010 213M996 207L1010 187M996 207L1010 200M996 207L1010 213"/>
       <path d="M1010 187L1024 193M1010 200L1024 193M1010 213L1024 193M1010 187L1024 207M1010 200L1024 207M1010 213L1024 207"/>
     </g>
-    <circle cx="996" cy="193" r="2.8" fill="#0d1117"/><circle cx="996" cy="207" r="2.8" fill="#0d1117"/>
-    <circle cx="1010" cy="187" r="2.8" fill="#0d1117"/><circle cx="1010" cy="200" r="2.8" fill="#0d1117"/><circle cx="1010" cy="213" r="2.8" fill="#0d1117"/>
-    <circle cx="1024" cy="193" r="2.8" fill="#0d1117"/><circle cx="1024" cy="207" r="2.8" fill="#0d1117"/>
+    <circle cx="996" cy="193" r="2.8" fill="#3b82f6"/><circle cx="996" cy="207" r="2.8" fill="#3b82f6"/>
+    <circle cx="1010" cy="187" r="2.8" fill="#3b82f6"/><circle cx="1010" cy="200" r="2.8" fill="#3b82f6"/><circle cx="1010" cy="213" r="2.8" fill="#3b82f6"/>
+    <circle cx="1024" cy="193" r="2.8" fill="#3b82f6"/><circle cx="1024" cy="207" r="2.8" fill="#3b82f6"/>
     </g>
     <text x="1010" y="252" text-anchor="middle" class="sans title">LLMs in production</text>
     <text x="1010" y="274" text-anchor="middle" class="sans sub">Software Engineer @ Z2Data</text>
