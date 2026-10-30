@@ -21,6 +21,7 @@ I love building solutions, and I started at the metal: as an Electronics & Commu
 Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I build web systems in **C# / .NET, SQL Server and Angular**. Today I'm a **Software Engineer at Z2Data**, where I develop the core .NET / Angular product and co-built a **production AI pipeline** (LLM + ML models on .NET) that multiplied daily event intake, filters and prioritizes events automatically, and cut operating costs by **15x**.
 
 The hardware years still shape how I work: I debug across every layer, from device constraints up to business logic, and I care about performance and cost.
+
 ## Tech stack
 
 <table>
