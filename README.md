@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Hosam Ayoub - Full-Stack Software Engineer, C# / .NET, LLM Automation" width="100%">
+  <img src="./assets/banner.svg" alt="Hosam Ayoub, software engineer who loves building solutions" width="100%">
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=I+love+building+solutions;Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+LLM+automation+in+production;From+embedded+C+to+agentic+workflows" alt="I love building solutions. Full-Stack Software Engineer. Shipping LLM automation in production. From embedded C to agentic workflows.">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+LLM+automation+in+production;From+embedded+C+to+agentic+workflows" alt="Full-Stack Software Engineer. Shipping LLM automation in production. From embedded C to agentic workflows.">
 </p>
 
 <p align="center">
