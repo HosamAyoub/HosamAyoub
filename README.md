@@ -14,7 +14,7 @@
 
 ---
 
-## 👋 About me
+## About me
 
 I started at the metal. As an Electronics & Communications Engineering student I built an 8-bit single-cycle **MIPS processor**, wrote **ATmega32 / STM32 drivers**, and developed an **STM32 dual-bank bootloader with rollback** for over-the-air firmware updates.
 
@@ -22,13 +22,13 @@ Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I bu
 
 The hardware years still shape how I work: I debug across every layer, from device constraints up to business logic, and I care about performance and cost.
 
-- 💼 **Now:** Software Engineer @ Z2Data (Dec 2025 - present) · before that, INFOSAS (multi-tenant legacy ERP)
-- 🎓 **Education:** B.Sc. Electronics & Electrical Communications Engineering, Fayoum University, Very Good with Honors
-- 🏆 **Graduation project:** SOVA smart glasses, graded Excellent and ranked 1st in the department
-- 🤖 **Workflow:** agent-first development, with Claude Code as my daily driver
-- 🌍 **Languages:** Arabic (native) · English (professional)
+- **Now:** Software Engineer @ Z2Data (Dec 2025 - present) · before that, INFOSAS (multi-tenant legacy ERP)
+- **Education:** B.Sc. Electronics & Electrical Communications Engineering, Fayoum University, Very Good with Honors
+- **Graduation project:** SOVA smart glasses, graded Excellent and ranked 1st in the department
+- **Workflow:** agent-first development, with Claude Code as my daily driver
+- **Languages:** Arabic (native) · English (professional)
 
-## 🛠️ Tech stack
+## Tech stack
 
 <table>
   <tr>
@@ -62,7 +62,7 @@ The hardware years still shape how I work: I debug across every layer, from devi
   </tr>
 </table>
 
-## 🚀 Featured projects
+## Featured projects
 
 <table>
   <tr>
@@ -91,7 +91,7 @@ The hardware years still shape how I work: I debug across every layer, from devi
       <code>STM32</code> <code>C</code> <code>FreeRTOS</code> <code>Python</code> <code>Bootloader</code>
     </td>
     <td width="50%" valign="top">
-      <h3>🔧 More from the lab</h3>
+      <h3>More from the lab</h3>
       <a href="https://github.com/HosamAyoub/MIPS-Processor">MIPS Processor</a> - 8-bit single-cycle CPU running R, I and J-type instructions<br>
       <a href="https://github.com/HosamAyoub/POV-display">POV Display</a> - persistence-of-vision analog clock on ATmega32<br>
       <a href="https://github.com/HosamAyoub/Nojoom-FM">Nojoom FM</a> - STM32 radio emulator: TFT, LED matrix and DAC audio at once<br>
@@ -101,7 +101,7 @@ The hardware years still shape how I work: I debug across every layer, from devi
   </tr>
 </table>
 
-## 📊 GitHub stats
+## GitHub stats
 
 <p align="center">
   <picture>
