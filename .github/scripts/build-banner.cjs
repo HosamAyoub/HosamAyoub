@@ -1,16 +1,20 @@
 // Generates assets/banner.svg (timeline banner, SMIL-timed loader). Run from the repo root: node .github/scripts/build-banner.cjs
 const fs = require('fs');
-const DUR = '6s';
+// Timing in seconds. Stops finish at 1, 3, 5 and 7 s (on the 1 s pulse beat); after the last one
+// all four pulse together FINAL times in total, then everything resets.
+const SEC = 10, FINAL = 3, BEAT = 1, PULSE = 0.65;
+const DUR = SEC + 's';
+const k = (t) => +(t / SEC).toFixed(4);
 const DARK = '#0d1117';
 const FILL = process.env.FILL || 'solid';
 const OUT = process.env.OUT || 'assets/banner.svg';
 
 // hold windows (fraction of the cycle) while the loader sits inside each stop
 const stops = [
-  { x: 170, c: '#7ee787', a: 0.03, b: 0.13, year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
-  { x: 450, c: '#5fd0a8', a: 0.28, b: 0.38, year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
-  { x: 730, c: '#4fa3f0', a: 0.53, b: 0.63, year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
-  { x: 1010, c: '#3b82f6', a: 0.78, b: 0.88, year: 'TODAY', title: 'LLMs in production', sub: 'Software Engineer @ Z2Data' },
+  { x: 170, c: '#7ee787', a: k(0.2), b: k(1), year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
+  { x: 450, c: '#5fd0a8', a: k(2.2), b: k(3), year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
+  { x: 730, c: '#4fa3f0', a: k(4.2), b: k(5), year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
+  { x: 1010, c: '#3b82f6', a: k(6.2), b: k(7), year: 'TODAY', title: 'LLMs in production', sub: 'Software Engineer @ Z2Data' },
 ];
 
 // icon drawings; `col` is the stroke/fill colour, `live` adds the neuron blink
@@ -45,7 +49,7 @@ pos.push(1010); times.push(1);
 const loader = `<g>
     <animateTransform attributeName="transform" type="translate" dur="${DUR}" repeatCount="indefinite"
       values="${pos.map((p) => `${p} 0`).join(';')}" keyTimes="${times.join(';')}"/>
-    <animate attributeName="opacity" dur="${DUR}" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.92;0.95;1"/>
+    <animate attributeName="opacity" dur="${DUR}" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;${k(0.15)};${k(7)};${k(7.3)};1"/>
     <rect x="-22" y="198" width="44" height="4" rx="2" fill="#ffffff" opacity=".9"/>
   </g>`;
 
@@ -56,9 +60,9 @@ const clips = stops.map((s, i) => `<clipPath id="fill${i}">
     </clipPath>`).join('\n    ');
 
 const pulses = (s) => {
-  const P = 0.125, L = 0.1, f = (n) => +n.toFixed(4);
+  const P = k(BEAT), L = k(PULSE), last = k(7 + (FINAL - 1) * BEAT), f = (n) => +n.toFixed(4);
   const starts = [];
-  for (let t = s.b; t + L <= 1; t += P) starts.push(t);
+  for (let t = s.b; t <= last + 1e-6; t += P) starts.push(t);
   const rk = [0], rv = [26], ok = [0], ov = [0];
   for (const t of starts) {
     rk.push(f(t), f(t + L)); rv.push(26, 46);
@@ -80,7 +84,7 @@ const stopSvg = stops.map((s, i) => `
     <circle class="node" cx="${s.x}" cy="200" r="26" stroke="${s.c}"/>
     ${icons[i](s.c, true)}
     <g clip-path="url(#fill${i})">
-      <animate attributeName="opacity" dur="${DUR}" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.97;1"/>
+      <animate attributeName="opacity" dur="${DUR}" repeatCount="indefinite" values="1;1;0" keyTimes="0;${k(7 + (FINAL - 1) * BEAT + PULSE + 0.05)};1"/>
       <circle cx="${s.x}" cy="200" r="24.7" fill="${s.c}" opacity="${FILL === 'tint' ? 0.35 : 1}"/>
       ${icons[i](FILL === 'tint' ? s.c : DARK, false)}
     </g>
