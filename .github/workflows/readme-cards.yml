@@ -14,27 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Stats card (dark)
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&theme=github_dark&bg_color=0d1117&title_color=58a6ff&icon_color=3b82f6
-          path: profile/stats-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Stats card (light)
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&title_color=0969da&icon_color=0969da
-          path: profile/stats-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
+      - name: Build stats card
+        run: node .github/scripts/stats-card.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
 
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
+          git add -A profile
           git commit -m "Update README cards" || exit 0
           git push

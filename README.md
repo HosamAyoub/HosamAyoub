@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+LLM+automation+in+production;From+embedded+C+to+agentic+workflows" alt="Full-Stack Software Engineer. Shipping LLM automation in production. From embedded C to agentic workflows.">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=I+love+building+solutions;Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+LLM+automation+in+production;From+embedded+C+to+agentic+workflows" alt="I love building solutions. Full-Stack Software Engineer. Shipping LLM automation in production. From embedded C to agentic workflows.">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 ## About me
 
-I started at the metal. As an Electronics & Communications Engineering student I built an 8-bit single-cycle **MIPS processor**, wrote **ATmega32 / STM32 drivers**, and developed an **STM32 dual-bank bootloader with rollback** for over-the-air firmware updates.
+I love building solutions, and I started at the metal: as an Electronics & Communications Engineering student I built an 8-bit single-cycle **MIPS processor**, wrote **ATmega32 / STM32 drivers**, and developed an **STM32 dual-bank bootloader with rollback** for over-the-air firmware updates.
 
 Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I build web systems in **C# / .NET, SQL Server and Angular**, and today I'm a **Software Engineer at Z2Data**, where I co-built and deployed an **LLM-based automation pipeline** that multiplied daily event intake and cut operating costs by **15x** through optimization.
 
@@ -101,13 +101,8 @@ The hardware years still shape how I work: I debug across every layer, from devi
   </tr>
 </table>
 
-## GitHub stats
-
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
-    <img src="./profile/stats-light.svg" alt="GitHub stats" height="170">
-  </picture>
+  <img src="./profile/stats.svg" alt="By the numbers: 15x lower operating cost on a production LLM pipeline, GitHub contributions, public commits, 1st in department for SOVA" width="100%">
 </p>
 
 ---
