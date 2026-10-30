@@ -10,7 +10,7 @@ const stops = [
   { x: 170, c: '#7ee787', a: 0.03, b: 0.13, year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
   { x: 450, c: '#5fd0a8', a: 0.28, b: 0.38, year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
   { x: 730, c: '#4fa3f0', a: 0.53, b: 0.63, year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
-  { x: 1010, c: '#3b82f6', a: 0.78, b: 0.9, year: 'TODAY', title: 'LLMs in production', sub: 'Software Engineer @ Z2Data' },
+  { x: 1010, c: '#3b82f6', a: 0.78, b: 0.88, year: 'TODAY', title: 'LLMs in production', sub: 'Software Engineer @ Z2Data' },
 ];
 
 // icon drawings; `col` is the stroke/fill colour, `live` adds the neuron blink
@@ -56,7 +56,7 @@ const clips = stops.map((s, i) => `<clipPath id="fill${i}">
     </clipPath>`).join('\n    ');
 
 const pulses = (s) => {
-  const P = 0.15, L = 0.1, f = (n) => +n.toFixed(4);
+  const P = 0.125, L = 0.1, f = (n) => +n.toFixed(4);
   const starts = [];
   for (let t = s.b; t + L <= 1; t += P) starts.push(t);
   const rk = [0], rv = [26], ok = [0], ov = [0];
