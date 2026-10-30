@@ -22,39 +22,9 @@ Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I bu
 
 The hardware years still shape how I work: I debug across every layer, from device constraints up to business logic, and I care about performance and cost.
 
-## Tech stack
-
-<table>
-  <tr>
-    <td><b>Backend</b></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=cs,dotnet&theme=dark" alt="C#, .NET" height="40">
-      <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logoColor=white" alt="SQL Server" height="34">
-      <br><sub>ASP.NET Core · Web API · Entity Framework · LINQ · ADO.NET · MVC · JWT auth · REST API design</sub>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Frontend</b></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=angular,ts,js,vue,html,css,bootstrap&theme=dark" alt="Angular, TypeScript, JavaScript, Vue, HTML, CSS, Bootstrap" height="40">
-    </td>
-  </tr>
-  <tr>
-    <td><b>AI & automation</b></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python" height="40">
-      <img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude Code" height="34">
-      <br><sub>LLM automation pipelines · agentic workflows · AI chatbot integration</sub>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Systems & tools</b></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=c,cpp,linux,bash,raspberrypi,git,github,visualstudio&theme=dark" alt="C, C++, Linux, Bash, Raspberry Pi, Git, GitHub, Visual Studio" height="40">
-      <br><sub>STM32 · ATmega32 · RTOS · Yocto · bootloaders · UART / SPI / I2C / CAN</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./assets/tech-stack.svg" alt="Tech stack. Backend: C#, .NET, ASP.NET Core, Web API, Entity Framework, LINQ, SQL Server, Elasticsearch. Frontend: Angular, TypeScript, JavaScript, Vue, HTML, CSS, Bootstrap. AI and automation: Python, LLMs, ML models, AI pipelines, agentic workflows. Systems and embedded: C, C++, Linux, Bash, Raspberry Pi, STM32, RTOS, Yocto, Git." width="100%">
+</p>
 
 ## Featured projects
 
