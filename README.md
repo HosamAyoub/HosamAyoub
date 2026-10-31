@@ -26,45 +26,6 @@ The hardware years still shape how I work: I debug across every layer, from devi
   <img src="./assets/tech-stack.svg" alt="Tech stack. Backend: C#, .NET, ASP.NET Core, Web API, Entity Framework, LINQ, SQL Server, Elasticsearch. Frontend: Angular, TypeScript, JavaScript, Vue, HTML, CSS, Bootstrap. AI and automation: Python, LLMs, ML models, AI pipelines, agentic workflows. Systems and embedded: C, C++, Linux, Bash, Raspberry Pi, STM32, RTOS, Yocto, Git." width="100%">
 </p>
 
-## Featured projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/HosamAyoub/PharmaLink">💊 PharmaLink</a></h3>
-      A web platform that brings pharmacies into one place: find medicines, check availability, and get AI-suggested alternatives.
-      I led it end to end, from architecture and team management to deployment, and built the <b>JWT-authenticated .NET Core APIs</b>.
-      <br><br>
-      <code>.NET Core</code> <code>Angular</code> <code>JWT</code> <code>Google Maps API</code> <code>AI chatbot</code>
-      <br><sub><a href="https://github.com/HosamAyoub/PharmaLink">API</a> · <a href="https://github.com/HosamAyoub/PharmaLink-Angular">Angular front end</a></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/HosamAyoub/SOVA">🕶️ SOVA</a></h3>
-      Offline smart glasses for the visually impaired: real-time, voice-activated OCR and face, object and color detection
-      on a <b>Yocto-customized Raspberry Pi</b> Linux image. <b>Ranked 1st in the department.</b>
-      <br><br>
-      <code>Python</code> <code>ML / DL</code> <code>OCR</code> <code>Yocto</code> <code>Raspberry Pi</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/HosamAyoub/AutoNXT">🚗 AutoNXT</a></h3>
-      Automotive platform with secure Firmware Over-The-Air updates: an <b>STM32 dual-bank bootloader with rollback</b> and a
-      Python update manager on a Raspberry Pi that validates and sends encrypted updates over USART.
-      <br><br>
-      <code>STM32</code> <code>C</code> <code>FreeRTOS</code> <code>Python</code> <code>Bootloader</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3>More from the lab</h3>
-      <a href="https://github.com/HosamAyoub/MIPS-Processor">MIPS Processor</a> - 8-bit single-cycle CPU running R, I and J-type instructions<br>
-      <a href="https://github.com/HosamAyoub/POV-display">POV Display</a> - persistence-of-vision analog clock on ATmega32<br>
-      <a href="https://github.com/HosamAyoub/Nojoom-FM">Nojoom FM</a> - STM32 radio emulator: TFT, LED matrix and DAC audio at once<br>
-      <a href="https://github.com/HosamAyoub/Smart-Home">Smart Home</a> - two ATmega32s over USART, SPI and I2C, controlled by Bluetooth<br>
-      <a href="https://github.com/HosamAyoub/E-Commerce">E-Commerce</a> - responsive storefront with cart, search and filters
-    </td>
-  </tr>
-</table>
-
 <p align="center">
   <img src="./profile/stats.svg" alt="By the numbers: 15x lower operating cost on a production LLM pipeline, GitHub contributions, public commits, 1st in department for SOVA" width="100%">
 </p>

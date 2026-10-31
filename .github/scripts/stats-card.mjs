@@ -38,7 +38,7 @@ const repos = base.user.repositories.totalCount;
 const fmt = (n) => n.toLocaleString('en-US');
 
 const tiles = [
-  { value: '15x', lines: ['lower operating cost on a', 'production LLM pipeline'] },
+  { value: '15x', lines: ['lower operating cost on a', 'production AI pipeline'] },
   { value: fmt(contributions), lines: ['GitHub contributions', `since ${since}`] },
   { value: fmt(commits), lines: ['public commits across', `${repos} repositories`] },
   { value: '1st', lines: ['in department for the', 'SOVA graduation project'] },
