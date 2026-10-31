@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Hosam Ayoub, software engineer who loves building solutions" width="100%">
+  <picture><img src="./assets/banner.svg" alt="Hosam Ayoub, software engineer who loves building solutions" width="100%"></picture>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+AI+pipelines+in+production;From+embedded+C+to+agentic+workflows" alt="Full-Stack Software Engineer. Shipping AI pipelines in production. From embedded C to agentic workflows.">
+  <picture><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3200&pause=1200&color=3B82F6&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer+(.NET+%2B+Angular);Shipping+AI+pipelines+in+production;From+embedded+C+to+agentic+workflows" alt="Full-Stack Software Engineer. Shipping AI pipelines in production. From embedded C to agentic workflows."></picture>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/hosamayoub"><img src="https://img.shields.io/badge/LinkedIn-hosamayoub-0A66C2?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2EyLjA2NCAyLjA2NCAwIDEgMSAwLTQuMTI4IDIuMDY0IDIuMDY0IDAgMCAxIDAgNC4xMjh6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn"></a>
   <a href="mailto:hosamayoub50@gmail.com"><img src="https://img.shields.io/badge/Email-hosamayoub50%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/Based_in-Giza,_Egypt-2EA043?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in Giza, Egypt">
+  <picture><img src="https://img.shields.io/badge/Based_in-Giza,_Egypt-2EA043?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in Giza, Egypt"></picture>
 </p>
 
 ---
