@@ -1,4 +1,4 @@
-// Builds profile/stats.svg: one impact figure from the CV plus live GitHub figures.
+// Builds profile/stats-dark.svg and profile/stats-light.svg: one impact figure from the CV plus live GitHub figures.
 // Runs in the readme-cards workflow with GITHUB_TOKEN; no dependencies.
 import { mkdirSync, writeFileSync } from 'node:fs';
 
@@ -50,36 +50,40 @@ const tiles = [
   { value: String(languages.size), lines: ['programming languages,', 'from Assembly to TypeScript'] },
 ];
 
+// the card is transparent (outlines only), so it ships in two colour sets and the README picks one per GitHub theme
+const THEMES = {
+  dark: { title: '#3fb950', border: '#23406b', label: '#9fb3cc', num: ['#ffffff', '#9cc3ff'] },
+  light: { title: '#1a7f37', border: '#d0d7de', label: '#59636e', num: ['#1f2328', '#0969da'] },
+};
+
 const W = 264, GAP = 24, X0 = 36, Y0 = 70;
-const tileSvg = tiles.map((t, i) => {
-  const x = X0 + i * (W + GAP);
-  return `
+mkdirSync('profile', { recursive: true });
+for (const [theme, c] of Object.entries(THEMES)) {
+  const tileSvg = tiles.map((t, i) => {
+    const x = X0 + i * (W + GAP);
+    return `
   <g transform="translate(${x} ${Y0})">
-    <rect width="${W}" height="124" rx="12" fill="#111c2e" stroke="#23406b" stroke-width="1.5"/>
+    <rect width="${W}" height="124" rx="12" fill="none" stroke="${c.border}" stroke-width="1.5"/>
     <text x="24" y="56" class="sans num">${t.value}</text>
     ${t.lines.map((l, j) => `<text x="24" y="${86 + j * 22}" class="sans label">${l}</text>`).join('\n    ')}
   </g>`;
-}).join('');
+  }).join('');
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="226" viewBox="0 0 1200 226" role="img" aria-label="By the numbers: ${tiles.map((t) => `${t.value} ${t.lines.join(' ')}`).join('; ')}">
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="226" viewBox="0 0 1200 226" role="img" aria-label="By the numbers: ${tiles.map((t) => `${t.value} ${t.lines.join(' ')}`).join('; ')}">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/><stop offset="0.55" stop-color="#0f1b30"/><stop offset="1" stop-color="#132a4a"/>
-    </linearGradient>
     <linearGradient id="num" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#9cc3ff"/>
+      <stop offset="0" stop-color="${c.num[0]}"/><stop offset="1" stop-color="${c.num[1]}"/>
     </linearGradient>
   </defs>
   <style>
     .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
     .mono { font-family: 'Cascadia Code', 'Fira Code', Consolas, 'SFMono-Regular', Menlo, monospace; }
     .num { font-size: 46px; font-weight: 700; fill: url(#num); }
-    .label { font-size: 18px; fill: #9fb3cc; }
+    .label { font-size: 18px; fill: ${c.label}; }
   </style>
-  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#2da44e">BY THE NUMBERS</text>${tileSvg}
+  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="${c.title}">BY THE NUMBERS</text>${tileSvg}
 </svg>
 `;
-
-mkdirSync('profile', { recursive: true });
-writeFileSync('profile/stats.svg', svg);
+  writeFileSync(`profile/stats-${theme}.svg`, svg);
+}
 console.log({ contributions, commits, repos, since, languages: [...languages].sort() });

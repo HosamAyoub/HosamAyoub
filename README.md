@@ -23,11 +23,17 @@ Then I moved deliberately up the stack. After ITI's Full-Stack .NET program I bu
 The hardware years still shape how I work: I debug across every layer, from device constraints up to business logic, and I care about performance and cost.
 
 <p align="center">
-  <img src="./assets/tech-stack.svg" alt="Tech stack. Backend: C#, .NET, ASP.NET Core, Web API, Entity Framework, LINQ, SQL Server, Elasticsearch. Frontend: Angular, TypeScript, JavaScript, Vue, HTML, CSS, Bootstrap. AI and automation: Python, LLMs, ML models, AI pipelines, agentic workflows. Systems and embedded: C, C++, Linux, Bash, Raspberry Pi, STM32, RTOS, Yocto, Git." width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-dark.svg">
+    <img src="./assets/tech-stack-light.svg" alt="Tech stack. Backend: C#, .NET, ASP.NET Core, Web API, Entity Framework, LINQ, SQL Server, Elasticsearch. Frontend: Angular, TypeScript, JavaScript, Vue, HTML, CSS, Bootstrap. AI and automation: Python, LLMs, ML models, AI pipelines, agentic workflows. Systems and embedded: C, C++, Linux, Bash, Raspberry Pi, STM32, RTOS, Yocto, Git." width="100%">
+  </picture>
 </p>
 
 <p align="center">
-  <img src="./profile/stats.svg" alt="By the numbers: 15x lower operating cost on a production LLM pipeline, GitHub contributions, public commits, 1st in department for SOVA" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
+    <img src="./profile/stats-light.svg" alt="By the numbers: 15x lower operating cost on a production LLM pipeline, GitHub contributions, public commits, 1st in department for SOVA" width="100%">
+  </picture>
 </p>
 
 ---
