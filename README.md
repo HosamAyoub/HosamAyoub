@@ -12,7 +12,7 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-location-dark.svg"><img src="./assets/contact-location-light.svg" alt="Based in Cairo, Egypt" height="38"></picture>
 </p>
 
----
+
 
 ## About me
 
