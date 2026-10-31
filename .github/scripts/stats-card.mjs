@@ -1,4 +1,4 @@
-// Builds profile/stats.svg: two impact figures from the CV plus live GitHub figures.
+// Builds profile/stats.svg: one impact figure from the CV plus live GitHub figures.
 // Runs in the readme-cards workflow with GITHUB_TOKEN; no dependencies.
 import { mkdirSync, writeFileSync } from 'node:fs';
 
@@ -19,7 +19,9 @@ async function gql(query) {
 
 const base = await gql(`{ user(login: "${login}") {
   createdAt
-  repositories(ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false) { totalCount }
+  repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false) {
+    totalCount nodes { languages(first: 20) { nodes { name } } }
+  }
 } }`);
 const since = new Date(base.user.createdAt).getUTCFullYear();
 const thisYear = new Date().getUTCFullYear();
@@ -35,13 +37,17 @@ for (let y = since; y <= thisYear; y++) {
   commits += c.totalCommitContributions;
 }
 const repos = base.user.repositories.totalCount;
+// languages written by hand across public repos; markup, build files and framework scaffolding
+// (Java / Objective-C from Flutter templates) are not counted
+const NOT_WRITTEN = new Set(['HTML', 'CSS', 'Makefile', 'CMake', 'Batchfile', 'Linker Script', 'Dockerfile', 'Java', 'Objective-C', 'Swift', 'Kotlin']);
+const languages = new Set(base.user.repositories.nodes.flatMap((r) => r.languages.nodes.map((l) => l.name)).filter((n) => !NOT_WRITTEN.has(n)));
 const fmt = (n) => n.toLocaleString('en-US');
 
 const tiles = [
   { value: '15x', lines: ['lower operating cost on a', 'production AI pipeline'] },
   { value: fmt(contributions), lines: ['GitHub contributions', `since ${since}`] },
   { value: fmt(commits), lines: ['public commits across', `${repos} repositories`] },
-  { value: '1st', lines: ['in department for the', 'SOVA graduation project'] },
+  { value: String(languages.size), lines: ['programming languages,', 'from Assembly to TypeScript'] },
 ];
 
 const W = 264, GAP = 24, X0 = 36, Y0 = 70;
@@ -71,11 +77,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="226" v
     .label { font-size: 18px; fill: #9fb3cc; }
   </style>
   <rect width="1200" height="226" rx="18" fill="url(#bg)"/>
-  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#7ee787">BY THE NUMBERS</text>
-  <text x="1164" y="46" text-anchor="end" class="mono" font-size="14" fill="#5b7aa6">GitHub figures refresh daily</text>${tileSvg}
+  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#7ee787">BY THE NUMBERS</text>${tileSvg}
 </svg>
 `;
 
 mkdirSync('profile', { recursive: true });
 writeFileSync('profile/stats.svg', svg);
-console.log({ contributions, commits, repos, since });
+console.log({ contributions, commits, repos, since, languages: [...languages].sort() });
