@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="222" height="38" viewBox="0 0 222 38" role="img" aria-label="Based in: Cairo, Egypt">
+  <rect x="1" y="1" width="220" height="36" rx="18" fill="none" stroke="#23406b" stroke-width="1.5"/>
+  <path transform="translate(16 9) scale(.78)" fill="#58a6ff" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+  <text x="44" y="24" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14"><tspan fill="#9fb3cc">Based in</tspan><tspan fill="#e6edf3" font-weight="600" dx="6">Cairo, Egypt</tspan></text>
+</svg>

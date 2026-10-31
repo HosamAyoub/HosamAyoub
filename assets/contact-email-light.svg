@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="275" height="38" viewBox="0 0 275 38" role="img" aria-label="Email: hosamayoub50@gmail.com">
+  <rect x="1" y="1" width="273" height="36" rx="18" fill="none" stroke="#d0d7de" stroke-width="1.5"/>
+  <g transform="translate(16 10) scale(.75)" fill="none" stroke="#0969da" stroke-width="2.2" stroke-linejoin="round"><path d="M2 5h20v14H2z M2 5l10 8 10-8"/></g>
+  <text x="44" y="24" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14"><tspan fill="#59636e">Email</tspan><tspan fill="#1f2328" font-weight="600" dx="6">hosamayoub50@gmail.com</tspan></text>
+</svg>

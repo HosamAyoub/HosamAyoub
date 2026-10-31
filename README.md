@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/hosamayoub"><img src="https://img.shields.io/badge/LinkedIn-hosamayoub-0A66C2?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2EyLjA2NCAyLjA2NCAwIDEgMSAwLTQuMTI4IDIuMDY0IDIuMDY0IDAgMCAxIDAgNC4xMjh6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn"></a>
-  <a href="mailto:hosamayoub50@gmail.com"><img src="https://img.shields.io/badge/Email-hosamayoub50%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <picture><img src="https://img.shields.io/badge/Based_in-Giza,_Egypt-2EA043?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in Giza, Egypt"></picture>
+  <a href="https://www.linkedin.com/in/hosamayoub"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-linkedin-dark.svg"><img src="./assets/contact-linkedin-light.svg" alt="LinkedIn: hosamayoub" height="38"></picture></a>
+  <a href="mailto:hosamayoub50@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-email-dark.svg"><img src="./assets/contact-email-light.svg" alt="Email: hosamayoub50@gmail.com" height="38"></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-location-dark.svg"><img src="./assets/contact-location-light.svg" alt="Based in Cairo, Egypt" height="38"></picture>
 </p>
 
 ---
