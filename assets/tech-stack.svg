@@ -11,8 +11,7 @@
     .label { font-size: 13px; fill: #9fb3cc; }
     .tags { font-size: 14px; fill: #7d93b0; }
   </style>
-  <rect width="1200" height="516" rx="18" fill="url(#bg)"/>
-  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#7ee787">TECH STACK</text>
+  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#2da44e">TECH STACK</text>
   <g transform="translate(36 70)">
     <rect width="552" height="196" rx="12" fill="#111c2e" stroke="#23406b" stroke-width="1.5"/>
     <circle cx="28" cy="34" r="5" fill="#4fa3f0"/>

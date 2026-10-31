@@ -73,8 +73,7 @@ async function iconData(id) {
     .label { font-size: 13px; fill: #9fb3cc; }
     .tags { font-size: 14px; fill: #7d93b0; }
   </style>
-  <rect width="${W}" height="${H}" rx="18" fill="url(#bg)"/>
-  <text x="${PAD}" y="46" class="mono" font-size="16" letter-spacing="3" fill="#7ee787">TECH STACK</text>${body}
+  <text x="${PAD}" y="46" class="mono" font-size="16" letter-spacing="3" fill="#2da44e">TECH STACK</text>${body}
 </svg>
 `;
   fs.writeFileSync('assets/tech-stack.svg', svg);

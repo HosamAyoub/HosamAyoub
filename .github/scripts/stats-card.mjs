@@ -76,8 +76,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="226" v
     .num { font-size: 46px; font-weight: 700; fill: url(#num); }
     .label { font-size: 18px; fill: #9fb3cc; }
   </style>
-  <rect width="1200" height="226" rx="18" fill="url(#bg)"/>
-  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#7ee787">BY THE NUMBERS</text>${tileSvg}
+  <text x="36" y="46" class="mono" font-size="16" letter-spacing="3" fill="#2da44e">BY THE NUMBERS</text>${tileSvg}
 </svg>
 `;
 
