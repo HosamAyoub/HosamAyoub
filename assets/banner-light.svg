@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hosam Ayoub, software engineer who loves building solutions. 2021 embedded C and microcontroller drivers, 2023 embedded Linux with SOVA, 2025 full-stack .NET, today an AI pipeline in production at Z2Data.">
+  <defs>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f2328"/>
+      <stop offset="1" stop-color="#0969da"/>
+    </linearGradient>
+    <linearGradient id="time" gradientUnits="userSpaceOnUse" x1="110" y1="0" x2="1090" y2="0">
+      <stop offset="0" stop-color="#2da44e"/>
+      <stop offset="1" stop-color="#0969da"/>
+    </linearGradient>
+    <clipPath id="fill0">
+      <rect x="144" y="174" width="0" height="52">
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.0556;0.1111;1"/>
+      </rect>
+    </clipPath>
+    <clipPath id="fill1">
+      <rect x="424" y="174" width="0" height="52">
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.2778;0.3333;1"/>
+      </rect>
+    </clipPath>
+    <clipPath id="fill2">
+      <rect x="704" y="174" width="0" height="52">
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.5;0.5556;1"/>
+      </rect>
+    </clipPath>
+    <clipPath id="fill3">
+      <rect x="984" y="174" width="0" height="52">
+        <animate attributeName="width" dur="9s" repeatCount="indefinite" values="0;0;52;52" keyTimes="0;0.7222;0.7778;1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: 'Cascadia Code', 'Fira Code', Consolas, 'SFMono-Regular', Menlo, monospace; }
+    .year { font-size: 15px; letter-spacing: 2px; }
+    .title { font-size: 18px; font-weight: 600; fill: #1f2328; }
+    .sub { font-size: 14px; fill: #59636e; }
+    .node { fill: #ffffff; stroke-width: 2.5; }
+    .icon { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .neuron { animation: blink 3s ease-in-out infinite; }
+    .neuron.d1 { animation-delay: .4s; } .neuron.d2 { animation-delay: .8s; }
+    .neuron.d3 { animation-delay: 1.2s; } .neuron.d4 { animation-delay: 1.6s; }
+    @keyframes blink { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .neuron { animation: none; } }
+  </style>
+
+  <!-- identity -->
+  <text x="600" y="78" text-anchor="middle" class="sans" font-size="56" font-weight="700" fill="url(#name)" letter-spacing="1">Hosam Ayoub</text>
+  <text x="600" y="114" text-anchor="middle" class="sans" font-size="21" fill="#424a53">Software engineer who loves building solutions</text>
+
+  <!-- the time line and its loader: each stop fills white left to right while the loader is inside it -->
+  <line x1="110" y1="200" x2="1090" y2="200" stroke="url(#time)" stroke-width="3" opacity=".55"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" dur="9s" repeatCount="indefinite"
+      values="110 0;170 0;170 0;450 0;450 0;730 0;730 0;1010 0;1010 0;1010 0" keyTimes="0;0.0556;0.1111;0.2778;0.3333;0.5;0.5556;0.7222;0.7778;1"/>
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.0167;0.7778;0.8111;1"/>
+    <rect x="-22" y="198" width="44" height="4" rx="2" fill="#1f2328" opacity=".9"/>
+  </g>
+
+  <!-- 2021: Embedded C -->
+  <g>
+    <text x="170" y="160" text-anchor="middle" class="mono year" fill="#2da44e">2021</text>
+    <circle cx="170" cy="200" r="26" fill="none" stroke="#2da44e" stroke-width="2.5" opacity="0">
+      <animate attributeName="r" dur="9s" repeatCount="indefinite" values="26;26;46;26;46;26;46;26;46;26;46;26;46;26;46;26;46;46" keyTimes="0;0.1111;0.1833;0.2222;0.2944;0.3333;0.4055;0.4444;0.5166;0.5555;0.6277;0.6666;0.7388;0.7777;0.8499;0.8888;0.961;1"/>
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0" keyTimes="0;0.1111;0.1131;0.1833;0.2222;0.2242;0.2944;0.3333;0.3353;0.4055;0.4444;0.4464;0.5166;0.5555;0.5575;0.6277;0.6666;0.6686;0.7388;0.7777;0.7797;0.8499;0.8888;0.8908;0.961;1"/>
+    </circle>
+    <circle class="node" cx="170" cy="200" r="26" stroke="#2da44e"/>
+    <g class="icon" stroke="#2da44e">
+      <rect x="160" y="190" width="20" height="20" rx="3"/>
+      <path d="M165 186v4M170 186v4M175 186v4M165 210v4M170 210v4M175 210v4M156 195h4M156 205h4M180 195h4M180 205h4"/>
+    </g>
+    <g clip-path="url(#fill0)">
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.9667;1"/>
+      <circle cx="170" cy="200" r="24.7" fill="#2da44e" opacity="1"/>
+      <g class="icon" stroke="#ffffff">
+      <rect x="160" y="190" width="20" height="20" rx="3"/>
+      <path d="M165 186v4M170 186v4M175 186v4M165 210v4M170 210v4M175 210v4M156 195h4M156 205h4M180 195h4M180 205h4"/>
+    </g>
+    </g>
+    <text x="170" y="252" text-anchor="middle" class="sans title">Embedded C</text>
+    <text x="170" y="274" text-anchor="middle" class="sans sub">microcontroller drivers</text>
+  </g>
+
+  <!-- 2023: Embedded Linux + ML -->
+  <g>
+    <text x="450" y="160" text-anchor="middle" class="mono year" fill="#1a9f7a">2023</text>
+    <circle cx="450" cy="200" r="26" fill="none" stroke="#1a9f7a" stroke-width="2.5" opacity="0">
+      <animate attributeName="r" dur="9s" repeatCount="indefinite" values="26;26;46;26;46;26;46;26;46;26;46;26;46;46" keyTimes="0;0.3333;0.4055;0.4444;0.5166;0.5555;0.6277;0.6666;0.7388;0.7777;0.8499;0.8888;0.961;1"/>
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0" keyTimes="0;0.3333;0.3353;0.4055;0.4444;0.4464;0.5166;0.5555;0.5575;0.6277;0.6666;0.6686;0.7388;0.7777;0.7797;0.8499;0.8888;0.8908;0.961;1"/>
+    </circle>
+    <circle class="node" cx="450" cy="200" r="26" stroke="#1a9f7a"/>
+    <g class="icon" stroke="#1a9f7a">
+      <circle cx="441" cy="203" r="6"/><circle cx="459" cy="203" r="6"/>
+      <path d="M447 203h6M435 203l-3-6M465 203l3-6"/>
+    </g>
+    <g clip-path="url(#fill1)">
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.9667;1"/>
+      <circle cx="450" cy="200" r="24.7" fill="#1a9f7a" opacity="1"/>
+      <g class="icon" stroke="#ffffff">
+      <circle cx="441" cy="203" r="6"/><circle cx="459" cy="203" r="6"/>
+      <path d="M447 203h6M435 203l-3-6M465 203l3-6"/>
+    </g>
+    </g>
+    <text x="450" y="252" text-anchor="middle" class="sans title">Embedded Linux + ML</text>
+    <text x="450" y="274" text-anchor="middle" class="sans sub">SOVA smart glasses, 1st in dept.</text>
+  </g>
+
+  <!-- 2025: Full-Stack .NET -->
+  <g>
+    <text x="730" y="160" text-anchor="middle" class="mono year" fill="#218bff">2025</text>
+    <circle cx="730" cy="200" r="26" fill="none" stroke="#218bff" stroke-width="2.5" opacity="0">
+      <animate attributeName="r" dur="9s" repeatCount="indefinite" values="26;26;46;26;46;26;46;26;46;46" keyTimes="0;0.5556;0.6278;0.6667;0.7389;0.7778;0.85;0.8889;0.9611;1"/>
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;0.9;0;0;0.9;0;0;0.9;0;0;0.9;0;0" keyTimes="0;0.5556;0.5576;0.6278;0.6667;0.6687;0.7389;0.7778;0.7798;0.85;0.8889;0.8909;0.9611;1"/>
+    </circle>
+    <circle class="node" cx="730" cy="200" r="26" stroke="#218bff"/>
+    <g class="icon" stroke="#218bff">
+      <path d="M721 193l-7 7 7 7M739 193l7 7-7 7M733 190l-6 20"/>
+    </g>
+    <g clip-path="url(#fill2)">
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.9667;1"/>
+      <circle cx="730" cy="200" r="24.7" fill="#218bff" opacity="1"/>
+      <g class="icon" stroke="#ffffff">
+      <path d="M721 193l-7 7 7 7M739 193l7 7-7 7M733 190l-6 20"/>
+    </g>
+    </g>
+    <text x="730" y="252" text-anchor="middle" class="sans title">Full-Stack .NET</text>
+    <text x="730" y="274" text-anchor="middle" class="sans sub">C#, SQL Server, Angular</text>
+  </g>
+
+  <!-- TODAY: Production AI pipeline -->
+  <g>
+    <text x="1010" y="160" text-anchor="middle" class="mono year" fill="#0969da">TODAY</text>
+    <circle cx="1010" cy="200" r="26" fill="none" stroke="#0969da" stroke-width="2.5" opacity="0">
+      <animate attributeName="r" dur="9s" repeatCount="indefinite" values="26;26;46;26;46;46" keyTimes="0;0.7778;0.85;0.8889;0.9611;1"/>
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;0.9;0;0;0.9;0;0" keyTimes="0;0.7778;0.7798;0.85;0.8889;0.8909;0.9611;1"/>
+    </circle>
+    <circle class="node" cx="1010" cy="200" r="26" stroke="#0969da"/>
+    <g fill="none" stroke="#3a6db0" stroke-width="1">
+      <path d="M996 193L1010 187M996 193L1010 200M996 193L1010 213M996 207L1010 187M996 207L1010 200M996 207L1010 213"/>
+      <path d="M1010 187L1024 193M1010 200L1024 193M1010 213L1024 193M1010 187L1024 207M1010 200L1024 207M1010 213L1024 207"/>
+    </g>
+    <circle class="neuron" cx="996" cy="193" r="2.8" fill="#0969da"/><circle class="neuron d1" cx="996" cy="207" r="2.8" fill="#0969da"/>
+    <circle class="neuron d2" cx="1010" cy="187" r="2.8" fill="#0969da"/><circle class="neuron d3" cx="1010" cy="200" r="2.8" fill="#0969da"/><circle class="neuron d4" cx="1010" cy="213" r="2.8" fill="#0969da"/>
+    <circle class="neuron d1" cx="1024" cy="193" r="2.8" fill="#0969da"/><circle class="neuron d3" cx="1024" cy="207" r="2.8" fill="#0969da"/>
+    <g clip-path="url(#fill3)">
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.9667;1"/>
+      <circle cx="1010" cy="200" r="24.7" fill="#0969da" opacity="1"/>
+      <g fill="none" stroke="#ffffff" stroke-width="1">
+      <path d="M996 193L1010 187M996 193L1010 200M996 193L1010 213M996 207L1010 187M996 207L1010 200M996 207L1010 213"/>
+      <path d="M1010 187L1024 193M1010 200L1024 193M1010 213L1024 193M1010 187L1024 207M1010 200L1024 207M1010 213L1024 207"/>
+    </g>
+    <circle cx="996" cy="193" r="2.8" fill="#ffffff"/><circle cx="996" cy="207" r="2.8" fill="#ffffff"/>
+    <circle cx="1010" cy="187" r="2.8" fill="#ffffff"/><circle cx="1010" cy="200" r="2.8" fill="#ffffff"/><circle cx="1010" cy="213" r="2.8" fill="#ffffff"/>
+    <circle cx="1024" cy="193" r="2.8" fill="#ffffff"/><circle cx="1024" cy="207" r="2.8" fill="#ffffff"/>
+    </g>
+    <text x="1010" y="252" text-anchor="middle" class="sans title">Production AI pipeline</text>
+    <text x="1010" y="274" text-anchor="middle" class="sans sub">Software Engineer @ Z2Data</text>
+  </g>
+</svg>

@@ -1,20 +1,34 @@
-// Generates assets/banner.svg (timeline banner, SMIL-timed loader). Run from the repo root: node .github/scripts/build-banner.cjs
+// Generates assets/banner-dark.svg and assets/banner-light.svg (timeline banner, SMIL-timed loader).
+// Run from the repo root: node .github/scripts/build-banner.cjs
+// The banner is transparent, so it ships in two colour sets and the README picks one per GitHub theme.
 const fs = require('fs');
 // Timing in seconds. Stops finish at 1, 3, 5 and 7 s (on the 1 s pulse beat); after the last one
 // all four pulse together FINAL times in total, then everything resets.
 const SEC = 9, FINAL = 2, BEAT = 1, PULSE = 0.65;
 const DUR = SEC + 's';
 const k = (t) => +(t / SEC).toFixed(4);
-const DARK = '#0d1117';
+const THEMES = {
+  dark: { stops: ['#7ee787', '#5fd0a8', '#4fa3f0', '#3b82f6'], name: ['#ffffff', '#9cc3ff'], subtitle: '#c9d7ea',
+    title: '#e6edf3', sub: '#8ea5c2', node: '#0d1117', iconOnFill: '#0d1117', loader: '#ffffff' },
+  light: { stops: ['#2da44e', '#1a9f7a', '#218bff', '#0969da'], name: ['#1f2328', '#0969da'], subtitle: '#424a53',
+    title: '#1f2328', sub: '#59636e', node: '#ffffff', iconOnFill: '#ffffff', loader: '#1f2328' },
+};
+const THEME = process.env.THEME;
+if (!THEME) {
+  for (const theme of Object.keys(THEMES)) require('child_process').execFileSync(process.execPath, [__filename], { env: { ...process.env, THEME: theme }, stdio: 'inherit' });
+  process.exit(0);
+}
+const T = THEMES[THEME];
+const DARK = T.iconOnFill;
 const FILL = process.env.FILL || 'solid';
-const OUT = process.env.OUT || 'assets/banner.svg';
+const OUT = process.env.OUT || `assets/banner-${THEME}.svg`;
 
 // hold windows (fraction of the cycle) while the loader sits inside each stop
 const stops = [
-  { x: 170, c: '#7ee787', a: k(0.5), b: k(1), year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
-  { x: 450, c: '#5fd0a8', a: k(2.5), b: k(3), year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
-  { x: 730, c: '#4fa3f0', a: k(4.5), b: k(5), year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
-  { x: 1010, c: '#3b82f6', a: k(6.5), b: k(7), year: 'TODAY', title: 'Production AI pipeline', sub: 'Software Engineer @ Z2Data' },
+  { x: 170, c: T.stops[0], a: k(0.5), b: k(1), year: '2021', title: 'Embedded C', sub: 'microcontroller drivers' },
+  { x: 450, c: T.stops[1], a: k(2.5), b: k(3), year: '2023', title: 'Embedded Linux + ML', sub: 'SOVA smart glasses, 1st in dept.' },
+  { x: 730, c: T.stops[2], a: k(4.5), b: k(5), year: '2025', title: 'Full-Stack .NET', sub: 'C#, SQL Server, Angular' },
+  { x: 1010, c: T.stops[3], a: k(6.5), b: k(7), year: 'TODAY', title: 'Production AI pipeline', sub: 'Software Engineer @ Z2Data' },
 ];
 
 // icon drawings; `col` is the stroke/fill colour, `live` adds the neuron blink
@@ -50,7 +64,7 @@ const loader = `<g>
     <animateTransform attributeName="transform" type="translate" dur="${DUR}" repeatCount="indefinite"
       values="${pos.map((p) => `${p} 0`).join(';')}" keyTimes="${times.join(';')}"/>
     <animate attributeName="opacity" dur="${DUR}" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;${k(0.15)};${k(7)};${k(7.3)};1"/>
-    <rect x="-22" y="198" width="44" height="4" rx="2" fill="#ffffff" opacity=".9"/>
+    <rect x="-22" y="198" width="44" height="4" rx="2" fill="${T.loader}" opacity=".9"/>
   </g>`;
 
 const clips = stops.map((s, i) => `<clipPath id="fill${i}">
@@ -94,18 +108,13 @@ const stopSvg = stops.map((s, i) => `
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hosam Ayoub, software engineer who loves building solutions. 2021 embedded C and microcontroller drivers, 2023 embedded Linux with SOVA, 2025 full-stack .NET, today an AI pipeline in production at Z2Data.">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="0.55" stop-color="#0f1b30"/>
-      <stop offset="1" stop-color="#132a4a"/>
-    </linearGradient>
     <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#9cc3ff"/>
+      <stop offset="0" stop-color="${T.name[0]}"/>
+      <stop offset="1" stop-color="${T.name[1]}"/>
     </linearGradient>
     <linearGradient id="time" gradientUnits="userSpaceOnUse" x1="110" y1="0" x2="1090" y2="0">
-      <stop offset="0" stop-color="#7ee787"/>
-      <stop offset="1" stop-color="#3b82f6"/>
+      <stop offset="0" stop-color="${T.stops[0]}"/>
+      <stop offset="1" stop-color="${T.stops[3]}"/>
     </linearGradient>
     ${clips}
   </defs>
@@ -114,9 +123,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" v
     .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
     .mono { font-family: 'Cascadia Code', 'Fira Code', Consolas, 'SFMono-Regular', Menlo, monospace; }
     .year { font-size: 15px; letter-spacing: 2px; }
-    .title { font-size: 18px; font-weight: 600; fill: #e6edf3; }
-    .sub { font-size: 14px; fill: #8ea5c2; }
-    .node { fill: #111c2e; stroke-width: 2.5; }
+    .title { font-size: 18px; font-weight: 600; fill: ${T.title}; }
+    .sub { font-size: 14px; fill: ${T.sub}; }
+    .node { fill: ${T.node}; stroke-width: 2.5; }
     .icon { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
     .neuron { animation: blink 3s ease-in-out infinite; }
     .neuron.d1 { animation-delay: .4s; } .neuron.d2 { animation-delay: .8s; }
@@ -125,11 +134,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" v
     @media (prefers-reduced-motion: reduce) { .neuron { animation: none; } }
   </style>
 
-  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
-
   <!-- identity -->
   <text x="600" y="78" text-anchor="middle" class="sans" font-size="56" font-weight="700" fill="url(#name)" letter-spacing="1">Hosam Ayoub</text>
-  <text x="600" y="114" text-anchor="middle" class="sans" font-size="21" fill="#c9d7ea">Software engineer who loves building solutions</text>
+  <text x="600" y="114" text-anchor="middle" class="sans" font-size="21" fill="${T.subtitle}">Software engineer who loves building solutions</text>
 
   <!-- the time line and its loader: each stop fills white left to right while the loader is inside it -->
   <line x1="110" y1="200" x2="1090" y2="200" stroke="url(#time)" stroke-width="3" opacity=".55"/>

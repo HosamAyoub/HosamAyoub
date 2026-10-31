@@ -1,5 +1,5 @@
 <p align="center">
-  <picture><img src="./assets/banner.svg" alt="Hosam Ayoub, software engineer who loves building solutions" width="100%"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg"><img src="./assets/banner-light.svg" alt="Hosam Ayoub, software engineer who loves building solutions" width="100%"></picture>
 </p>
 
 <p align="center">
